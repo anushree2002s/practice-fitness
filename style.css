@@ -1,0 +1,85 @@
+/* fonts */
+:root {
+    --logo-font: "Katibeh";
+    --heading-font: "Montserrat";
+    --body-font: "Roboto";
+}
+
+/* colors */
+:root {
+    --primary-font: #010101;
+    --secondary-font: #fefefe;
+    --primary-color: #E31C25;
+    --secondary-color: #010101;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden
+}
+
+/* hero */
+.hero-image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid{
+    background-color: #fefefe;
+    height: 10vh;
+    border-radius: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-title{
+    text-transform: uppercase;
+    color: var(--primary-font);
+    font-family: var(--logo-font);
+    font-size: 3rem;
+    font-weight:700;
+    padding: auto; 
+}
+
+.right-side ul{
+    list-style: none;
+    font-family: var(--heading-font);
+}
+
+.right-side ul li:hover{
+    border-bottom: 1px solid #E31C25;
+    font-weight: 500;
+    color: #E31C25;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100%; 
+    text-align: center;
+}
+.hero-title {
+    font-family: var(--heading-font);
+    color: var(--secondary-font);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 4rem;
+    width: 70vw;
+}
