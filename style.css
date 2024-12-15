@@ -157,3 +157,23 @@ ul .checklist li{
     background-color: var(--secondary-color);
     transition: background-color 0.3s ease;
 }
+
+/* box section */
+.boxes-container{
+    margin: 0;
+    padding: 0;
+}
+
+.cardio-info{
+    background-color: var(--secondary-color);
+    flex-direction: column;
+    color: var(--secondary-font);
+    text-align: center;
+}
+
+.strength-info{
+    background-color: var(--primary-color);
+    flex-direction: column;
+    color: var(--secondary-font);
+    text-align: center;
+}
