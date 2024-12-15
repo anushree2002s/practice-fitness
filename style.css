@@ -119,3 +119,41 @@ body{
 }
 
 /* 2nd section */
+.left-side-image{
+    width: 100%;
+}
+
+.right-side-heading{
+    font-family: var(--heading-font);
+    color: var(--primary-font);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.right-side-description{
+    font-family: var(--body-font);
+    text-align: justify;
+}
+
+.checklist li::marker {
+    content: '✓';
+    color: var(--primary-color);
+  }
+
+.checklist li{
+    padding: 0.5rem;
+}
+
+ul .checklist li{
+    font-family: var(--body-font);
+}
+
+.btn-read-more{
+    background-color: var(--primary-color);
+    color: var(--secondary-font);
+}
+
+.btn-read-more:hover{
+    background-color: var(--secondary-color);
+    transition: background-color 0.3s ease;
+}
