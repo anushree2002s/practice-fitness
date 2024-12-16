@@ -177,3 +177,21 @@ ul .checklist li{
     color: var(--secondary-font);
     text-align: center;
 }
+
+/* youtube section */
+.youtube-overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.youtube-heading{
+    font-family: var(--heading-font);
+    color: var(--secondary-font);
+}
+
+.youtube-overlay p{
+    font-family: var(--body-font);
+}
