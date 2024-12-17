@@ -229,7 +229,6 @@ ul .checklist li {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* transition: transform 0.3s ease-in-out; */
 }
 
 .gallery .gallery-item {
@@ -240,7 +239,7 @@ ul .checklist li {
 /* trainers */
 .trainers-section {
     background-color: var(--secondary-color);
-    height: 90vh;
+    height: 120vh;
 }
 
 .trainers-heading {
@@ -293,10 +292,6 @@ ul .checklist li {
 }
 
 /* pricing */
-.pricing-section {
-    padding-top: 10rem;
-}
-
 .pricing-title {
     font-family: var(--heading-font);
 }
@@ -336,7 +331,6 @@ ul .checklist li {
 
 .pricing-card .btn-purchase {
     font-weight: bold;
-    margin: 10px 0;
 }
 
 .card-basic .card-header, .card-business .card-header  {
@@ -381,4 +375,15 @@ ul .checklist li {
     font-family: var(--body-font);
     font-size: 1rem;
     font-weight: 500;
+}
+
+/* blog */
+.blog-title{
+    font-family: var(--heading-font);
+    color: var(--primary-font);
+}
+
+.blog-info{
+    font-family: var(--body-font);
+    color: var(--primary-font);
 }
