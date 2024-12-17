@@ -293,3 +293,92 @@ ul .checklist li {
 }
 
 /* pricing */
+.pricing-section {
+    padding-top: 10rem;
+}
+
+.pricing-title {
+    font-family: var(--heading-font);
+}
+
+.pricing-info {
+    font-family: var(--body-font);
+}
+
+.pricing-card {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card .card-header {
+    color: var(--secondary-font);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.pricing-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pricing-card .price span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.pricing-card .btn-purchase {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-basic .card-header, .card-business .card-header  {
+    background-color: var(--secondary-color)
+}
+
+.card-standard .card-header {
+    background-color: var(--primary-color);
+}
+
+.card-basic .btn-purchase,
+.card-business .btn-purchase {
+    background-color: var(--secondary-color);
+    color: var(--secondary-font);
+}
+
+.card-basic .btn-purchase:hover,
+.card-business .btn-purchase:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-font);
+}
+
+.card-standard .btn-purchase {
+    background-color: var(--primary-color);
+    color: var(--secondary-font)
+}
+
+.card-standard .btn-purchase:hover{
+    background-color: var(--secondary-color);
+    color: var(--secondary-font);
+}
+
+.strike{
+   text-decoration: line-through;
+}
+
+.card-body ul{
+    padding: 1rem;
+}
+
+.card-body ul li{
+    font-family: var(--body-font);
+    font-size: 1rem;
+    font-weight: 500;
+}
