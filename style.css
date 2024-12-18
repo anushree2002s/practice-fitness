@@ -333,8 +333,9 @@ ul .checklist li {
     font-weight: bold;
 }
 
-.card-basic .card-header, .card-business .card-header  {
-    background-color: var(--secondary-color)
+.card-basic .card-header,
+.card-business .card-header {
+    background-color: var(--secondary-color);
 }
 
 .card-standard .card-header {
@@ -348,42 +349,184 @@ ul .checklist li {
 }
 
 .card-basic .btn-purchase:hover,
-.card-business .btn-purchase:hover{
+.card-business .btn-purchase:hover {
     background-color: var(--primary-color);
     color: var(--secondary-font);
 }
 
 .card-standard .btn-purchase {
     background-color: var(--primary-color);
-    color: var(--secondary-font)
+    color: var(--secondary-font);
 }
 
-.card-standard .btn-purchase:hover{
+.card-standard .btn-purchase:hover {
     background-color: var(--secondary-color);
     color: var(--secondary-font);
 }
 
-.strike{
-   text-decoration: line-through;
+.strike {
+    text-decoration: line-through;
 }
 
-.card-body ul{
+.card-body ul {
     padding: 1rem;
 }
 
-.card-body ul li{
+.card-body ul li {
     font-family: var(--body-font);
     font-size: 1rem;
     font-weight: 500;
 }
 
 /* blog */
-.blog-title{
+.blog-title {
     font-family: var(--heading-font);
     color: var(--primary-font);
 }
 
-.blog-info{
+.blog-info {
     font-family: var(--body-font);
     color: var(--primary-font);
+}
+
+.date-tag {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    color: var(--secondary-font);
+}
+
+.card-title {
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+
+.blog-info,
+.card-text {
+    font-family: var(--body-font);
+}
+
+.blog-cards .btn-sm {
+    background-color: var(--secondary-color);
+    color: var(--secondary-font);
+    font-family: var(--body-font);
+}
+
+/* contact us */
+.contact-container {
+    background-color: var(--primary-color);
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: -20px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    color: #fefefe;
+    font-size: 5rem;
+    margin-left: 5rem;
+}
+
+@media (max-width: 768px) {
+    .contact-icon {
+        margin-left: 0;
+    }
+
+    .heading-white,
+    .details-white {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+.contact-container .heading-white {
+    padding-top: 2rem;
+    color: var(--secondary-font);
+}
+
+.contact-container .details-white {
+    width: 80%;
+    font-family: var(--body-font);
+    color: var(--secondary-font);
+    padding-top: 1rem;
+}
+
+.contact-container .btn-custom {
+    background-color: var(--secondary-color);
+    color: var(--secondary-font);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: var(--body-font);
+}
+
+.contact-container .btn-custom:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-font);
+    border: 1px solid #010101;
+}
+
+/* contact us */
+.email-input {
+    padding: 20px 30px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.email-input form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.email-input input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+}
+
+.email-input input::placeholder {
+    color: #575757;
+}
+
+.email-input .sign-up {
+    background-color: var(--secondary-color);
+    color: var(--secondary-font);
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.email-input .sign-up:hover {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 480px) {
+    .email-input form {
+        flex-direction: column;
+        border: none;
+    }
+
+    .email-input input,
+    .email-input .sign-up {
+        width: 100%;
+    }
+
+    .email-input input {
+        border-bottom: 1px solid #ddd;
+    }
 }
