@@ -40,6 +40,9 @@ body {
     background-color: #fefefe;
     height: 10vh;
     border-radius: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
 }
 
 .logo {
@@ -529,4 +532,50 @@ ul .checklist li {
     .email-input input {
         border-bottom: 1px solid #ddd;
     }
+}
+
+/* footer */
+footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.footer-container h4 {
+    font-family: var(--logo-font);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+.footer-links,
+.footer-contact,
+.footer-hours {
+    list-style: none;
+    padding: 0;
+    font-family: var(--body-font);
+}
+
+/* social media */
+.footer-social a {
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.copyright {
+    background-color: var(--secondary-color);
+    color: var(--secondary-font);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
 }
