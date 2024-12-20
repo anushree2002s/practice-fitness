@@ -192,12 +192,42 @@
           d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"
         />
       </symbol>
+      <!-- hamburger -->
+      <symbol id="hamburger" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="#101010"
+          stroke-linecap="round"
+          stroke-width="1.5"
+          d="M20 7H4m16 5H4m16 5H4"
+        />
+      </symbol>
       <!-- gmail -->
       <symbol id="mail" viewBox="0 0 24 24">
         <path
           fill="#fefefe"
           d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7l8-5V6l-8 5l-8-5v2z"
         />
+      </symbol>
+      <!-- close -->
+      <symbol id="close" viewBox="0 0 24 24">
+        <path
+          fill="none"
+          stroke="#101010"
+          stroke-dasharray="12"
+          stroke-dashoffset="12"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 12l7 7M12 12l-7 -7M12 12l-7 7M12 12l7 -7"
+        >
+          <animate
+            fill="freeze"
+            attributeName="stroke-dashoffset"
+            dur="0.3s"
+            values="12;0"
+          />
+        </path>
       </symbol>
     </svg>
 
@@ -240,8 +270,29 @@
                   </svg>
                 </ul>
               </div>
+              <div class="hamburger-menu">
+                <svg class="icon" width="30" height="30">
+                  <use xlink:href="#hamburger"></use>
+                </svg>
+              </div>
             </div>
           </nav>
+
+          <!-- sidebar for responsiveness -->
+          <div class="side-menu">
+            <div class="close-btn">
+              <svg class="icon" width="30" height="30">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Classes</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
 
           <!-- hero-content -->
           <div class="hero-content">
@@ -361,9 +412,15 @@
               alt="Group Workout"
               class="img-fluid"
             />
+            <div class="name-overlay fw-bold text-uppercase mx-1">
+              Group Zumba Sessions
+            </div>
           </div>
           <div class="col-md-4 col-sm-6 gallery-item">
             <img src="images/gallery2.png" alt="Yoga Pose" class="img-fluid" />
+            <div class="name-overlay fw-bold text-uppercase mx-1">
+              One on One Yoga
+            </div>
           </div>
           <div class="col-md-4 col-sm-6 gallery-item">
             <img
@@ -371,6 +428,9 @@
               alt="Treadmill Workout"
               class="img-fluid"
             />
+            <div class="name-overlay fw-bold text-uppercase mx-1">
+              Cardio Sessions
+            </div>
           </div>
 
           <!-- Row 2 -->
@@ -380,6 +440,9 @@
               alt="Weight Lifting"
               class="img-fluid"
             />
+            <div class="name-overlay fw-bold text-uppercase mx-1">
+              Strength Training
+            </div>
           </div>
           <div class="col-md-6 col-sm-6 gallery-item">
             <img
@@ -387,6 +450,9 @@
               alt="Boxing Practice"
               class="img-fluid"
             />
+            <div class="name-overlay fw-bold text-uppercase mx-1">
+              Kickboxing Session for Kids
+            </div>
           </div>
         </div>
       </div>
@@ -552,7 +618,6 @@
         </div>
       </div>
 
-
       <!-- blog 2 -->
       <div class="col-md-4 col-sm-6 col-12">
         <div class="card blog-card h-100">
@@ -571,7 +636,8 @@
               Some common mistakes you're making while working out
             </h5>
             <p class="card-text">
-             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, hic.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat,
+              hic.
             </p>
             <a href="#" class="btn btn-sm">Read More</a>
           </div>
@@ -596,7 +662,9 @@
               Why should you do cardio everyday?
             </h5>
             <p class="card-text">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolore tempore quaerat dolores veniam architecto vitae, possimus consequatur repudiandae modi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+              dolore tempore quaerat dolores veniam architecto vitae, possimus
+              consequatur repudiandae modi.
             </p>
             <a href="#" class="btn btn-sm">Read More</a>
           </div>
@@ -607,19 +675,21 @@
     <!-- contact us -->
     <div class="contact-container px-5 my-3 py-5" id="contact">
       <div class="contact-icon">
-        <img src="images/envelope.png">
+        <img src="images/envelope.png" />
       </div>
       <div class="contact-content px-5">
         <div class="heading-white text-uppercase text-center fw-bold">
           Sign up to get the latest updates
         </div>
         <div class="details-white">
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut dolorem impedit assumenda exercitationem perferendis ex officia labore. Animi aliquam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut
+          dolorem impedit assumenda exercitationem perferendis ex officia
+          labore. Animi aliquam.
         </div>
       </div>
       <div class="email-input py-4">
         <form>
-          <input type="email" placeholder="Enter your email">
+          <input type="email" placeholder="Enter your email" />
           <button type="submit" class="sign-up">Sign up</button>
         </form>
       </div>
@@ -635,7 +705,7 @@
               <svg class="icon" width="50" height="50">
                 <use xlink:href="#gray-logo"></use>
               </svg>
-               TITAN
+              TITAN
             </h4>
           </div>
 
@@ -658,12 +728,14 @@
               <li>
                 <svg class="icon" width="20" height="20">
                   <use xlink:href="#phone"></use>
-                </svg> +000-754-3124
+                </svg>
+                +000-754-3124
               </li>
               <li>
                 <svg class="icon" width="20" height="20">
                   <use xlink:href="#location"></use>
-                </svg> NYC, USA
+                </svg>
+                NYC, USA
               </li>
             </ul>
           </div>
@@ -685,25 +757,33 @@
 
         <!-- soc med -->
         <div class="text-center footer-social mt-4">
-          <a href="#"><svg class="icon" width="20" height="20">
-            <use xlink:href="#facebook"></use>
-          </svg></a>
-          <a href="#"> <a href="#"><svg class="icon" width="20" height="20">
-            <use xlink:href="#youtube"></use>
-          </svg></a></a>
-          <a href="#"> <a href="#"><svg class="icon" width="20" height="20">
-            <use xlink:href="#instagram"></use>
-          </svg></a></a>
-          <a href="#"> <a href="#"><svg class="icon" width="20" height="20">
-            <use xlink:href="#mail"></use>
-          </svg></a></a>
+          <a href="#"
+            ><svg class="icon" width="20" height="20">
+              <use xlink:href="#facebook"></use></svg
+          ></a>
+          <a href="#">
+            <a href="#"
+              ><svg class="icon" width="20" height="20">
+                <use xlink:href="#youtube"></use></svg></a
+          ></a>
+          <a href="#">
+            <a href="#"
+              ><svg class="icon" width="20" height="20">
+                <use xlink:href="#instagram"></use></svg></a
+          ></a>
+          <a href="#">
+            <a href="#"
+              ><svg class="icon" width="20" height="20">
+                <use xlink:href="#mail"></use></svg></a
+          ></a>
         </div>
       </div>
 
       <!-- copyright -->
       <div class="copyright my-2">
-        Copyright © 2020 Gymster All Rights Reserved.
+        Copyright © 2020 Titan All Rights Reserved
       </div>
     </footer>
+  <script src="script.js"></script>
   </body>
 </html>
