@@ -289,7 +289,8 @@ ul .checklist li {
 /* trainers */
 .trainers-section {
     background-color: var(--secondary-color);
-    height: 120vh;
+    min-height: 120vh;
+    overflow: hidden;
 }
 
 .trainers-heading {
@@ -300,6 +301,8 @@ ul .checklist li {
 .trainers-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .trainers-info {
@@ -333,12 +336,35 @@ ul .checklist li {
     font-size: 1rem;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    font-family: var(--body-font);
+}
+
+.title-sc-small{
+    display: none;
 }
 
 .trainer1:hover .name-overlay,
 .trainer2:hover .name-overlay,
 .trainer3:hover .name-overlay {
     opacity: 1;
+}
+
+@media (max-width:768px) {
+    .title-sc-small{
+        display: block;
+        font-weight: 400;
+        font-family: var(--body-font);
+        padding: 0.5rem;
+    }
+
+    .title{
+        display: none;
+    }
+
+    .name-overlay{
+        height: 6rem;
+    }
+    
 }
 
 /* pricing */
@@ -464,10 +490,12 @@ ul .checklist li {
 /* contact us */
 .contact-container {
     background-color: var(--primary-color);
-    height: 25vh;
+    min-height: 25vh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     top: -20px;
 }
 
@@ -498,6 +526,7 @@ ul .checklist li {
 .contact-container .heading-white {
     padding-top: 2rem;
     color: var(--secondary-font);
+    
 }
 
 .contact-container .details-white {
@@ -521,7 +550,6 @@ ul .checklist li {
     border: 1px solid #010101;
 }
 
-/* contact us */
 .email-input {
     padding: 20px 30px;
     border-radius: 5px;
@@ -537,6 +565,7 @@ ul .checklist li {
     border: 1px solid #ddd;
     border-radius: 50px;
     overflow: hidden;
+
 }
 
 .email-input input {
