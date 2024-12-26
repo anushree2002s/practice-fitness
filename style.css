@@ -492,7 +492,7 @@ ul .checklist li {
     background-color: var(--primary-color);
     min-height: 25vh;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
@@ -513,13 +513,12 @@ ul .checklist li {
 
 @media (max-width: 768px) {
     .contact-icon {
-        margin-left: 0;
+        margin-left: 8rem;
     }
 
-    .heading-white,
-    .details-white {
-        margin-left: 2rem;
-        margin-right: 2rem;
+    .contact-container{
+        flex-wrap: wrap;
+        align-items: center;
     }
 }
 
